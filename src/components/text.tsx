@@ -1,18 +1,7 @@
 import React from "react";
-import {cva, type VariantProps} from "class-variance-authority";
+import type {VariantProps} from "class-variance-authority";
+import { textVariants } from "./styles/text.styles"; 
 
-const textVariants = cva("font-sans text-gray-400", {
-    variants: {
-        variant: {
-            "body-sm-bold": "text-sm leading-5 font-semibold",
-            "body-md": "text-base leading-66 font-normal",
-            "body-md-bold": "text-base leading-5 font-semibold"
-        }
-    },
-    defaultVariants: {
-        variant: "body-md"
-    }
-});
 
 
 interface TextProps extends VariantProps<typeof textVariants> {
