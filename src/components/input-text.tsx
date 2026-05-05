@@ -4,7 +4,7 @@ import { inputTextVariants } from "./styles/input-text.styles";
 
 interface InputTextProps
   extends VariantProps<typeof inputTextVariants>,
-    Omit<React.ComponentProps<"input">, "size" | "disabled"> {}
+  Omit<React.ComponentProps<"input">, "size" | "disabled"> { }
 
 export default function InputText({
   size,

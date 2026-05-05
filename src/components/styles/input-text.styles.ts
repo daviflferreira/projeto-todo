@@ -18,5 +18,5 @@ export const inputTextVariants = cva(
       size: "md",
       disabled: false,
     },
-  }
+  },
 );

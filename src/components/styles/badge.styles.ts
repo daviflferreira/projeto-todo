@@ -5,6 +5,7 @@ export const badgeVariants = cva(
   {
     variants: {
       variant: {
+        none: "",
         primary: "bg-green-light",
         secondary: "bg-pink-light",
       },
@@ -16,17 +17,29 @@ export const badgeVariants = cva(
       variant: "primary",
       size: "sm",
     },
-  }
+  },
 );
 
 export const badgeTextVariants = cva("", {
   variants: {
     variant: {
+      none: "",
       primary: "text-green-dark",
       secondary: "text-pink-dark",
     },
   },
   defaultVariants: {
     variant: "primary",
+  },
+});
+
+export const badgeSkeletonVariants = cva("", {
+  variants: {
+    size: {
+      sm: "w-6 h-6",
+    },
+  },
+  defaultVariants: {
+    size: "sm",
   },
 });

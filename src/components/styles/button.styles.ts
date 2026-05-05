@@ -22,7 +22,7 @@ export const buttonVariants = cva(
       size: "md",
       disabled: false,
     },
-  }
+  },
 );
 
 export const buttonIconVariants = cva("transition", {

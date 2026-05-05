@@ -1,6 +1,6 @@
 import React from "react";
-import type {VariantProps} from "class-variance-authority";
-import { textVariants } from "./styles/text.styles"; 
+import type { VariantProps } from "class-variance-authority";
+import { textVariants } from "./styles/text.styles";
 
 
 
@@ -10,11 +10,11 @@ interface TextProps extends VariantProps<typeof textVariants> {
     children?: React.ReactNode;
 }
 
-export default function Text({as = "span", variant, className, children, ...props }: TextProps) {
+export default function Text({ as = "span", variant, className, children, ...props }: TextProps) {
     return React.createElement(
         as,
         {
-            className: textVariants({variant, className}),
+            className: textVariants({ variant, className }),
             ...props
         },
         children

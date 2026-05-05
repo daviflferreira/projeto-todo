@@ -4,8 +4,8 @@ import type { VariantProps } from "class-variance-authority";
 
 interface ContainerProps extends VariantProps<typeof containerVariants>,
     React.ComponentProps<"div"> {
-        as?: keyof React.JSX.IntrinsicElements;
-    }
+    as?: keyof React.JSX.IntrinsicElements;
+}
 
 export default function Container({
     as = "div",
@@ -16,7 +16,7 @@ export default function Container({
     return React.createElement(
         as,
         {
-            className: containerVariants({size: "md", className}),
+            className: containerVariants({ size: "md", className }),
             ...props,
         },
         children

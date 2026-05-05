@@ -16,7 +16,7 @@ export default function Card({
     return React.createElement(
         as,
         {
-            className: cardVariants({size, className}),
+            className: cardVariants({ size, className }),
             ...props
         },
         children
